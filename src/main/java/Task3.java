@@ -1,10 +1,24 @@
+import java.io.*;
 import java.time.LocalTime;
 import java.util.Scanner;
 
 public class Task3 {
-    public static void main(String[] args) {
-        run();
+    public static void main(String[] args) throws IOException {
+//        run();
+        File file = new File("example.txt");
+        FileReader reader = new FileReader(file);
+        BufferedReader br = new BufferedReader(reader);
+        String line;
+        String expression = "";
+
+        while ((line = br.readLine()) != null) {
+            expression = line;
+        }
+
+        System.out.println(expression);
     }
+
+    // https://github.com/blckRbbit/example-java-seminar-1/tree/master/src/main/java
 
     private static void run() {
         LocalTime now = LocalTime.now();
