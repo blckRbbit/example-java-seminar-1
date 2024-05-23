@@ -66,7 +66,7 @@ public class ClinicMain {
         * Aidar - 111, 222, 000
         * Alena - 777
         *
-        *
+        *===
         * Comparator -> примеры кода с компаратором (google)
         * */
 
